@@ -1,0 +1,2 @@
+* stategy is implemented very easy via functional approaches, we don't have to encapsulate something within class, because we have first class functions
+* any extra data that might be placed as class members is traditionally implemented using closures
