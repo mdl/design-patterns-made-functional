@@ -1,0 +1,23 @@
+{
+  "name": "why-patterns-suck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oterl/why-design-patterns-suck.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oterl/why-design-patterns-suck/issues"
+  },
+  "homepage": "https://github.com/oterl/why-design-patterns-suck#readme",
+  "dependencies": {
+    "@types/ramda": "^0.26.42",
+    "ramda": "^0.27.0"
+  }
+}
