@@ -30,6 +30,8 @@ type User = {
 }
 
 // Declarative style via ramda
+// Final expression is composed of many smaller blocks
+// somewhat similar to custom rxjs operators
 const sortUserTasksR: (users: User[]) => User[] = 
   Rpipe(
     RsortBy(Rprop('name')),
@@ -38,6 +40,7 @@ const sortUserTasksR: (users: User[]) => User[] =
   )
 
 // Imperative style via native js
+// 
 const sortUserTasksJs: (users: User[]) => User[] = users => {
   const usersSorted = [...users].sort(({name: name1}, {name: name2}) =>
     name1 < name2
