@@ -1,4 +1,5 @@
 * This pattern is property combinator
+* Main difference from factory method is that factory method works with 1 abstract product only
 * I don't like a concept of AbstractHero in OOP version, 
 each hero is unique and has unique list of abilities, in our case each hero is forced to have
 move, fight and heal abilities. Therefore we have to use hacks like NullFight etc.
