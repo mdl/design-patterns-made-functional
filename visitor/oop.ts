@@ -8,7 +8,23 @@ type El = {
   accept(visitor: Visitor): void;
 }
 
-// Elements should know that they can be visited, and also they know about structure of visitors (so they know about existense of other elements which is bad)
+// Elements should know that they can be visited, and also they know about structure of visitors
+// (so they know about existense of other elements which is bad)
+// ^ this can be fixed by something like this
+// type Visitor = VisitorA & VisitorB & VisitorC
+// type VisitorA = {visitElementA(elemA: ElementA): void;}
+// type VisitorB = {visitElementB(elemB: ElementB): void;}
+// type VisitorC = {visitElementC(elemC: ElementC): void;}
+// and then
+// class ElementA implements El {
+//   state = 'element1'
+//
+//   accept(visitor: VisitorA)
+//     { visitor.visitElementA(this); }
+//   operationB(): void { }
+// }
+// ...
+
 class ElementB implements El {
   state = 'element1'
 
